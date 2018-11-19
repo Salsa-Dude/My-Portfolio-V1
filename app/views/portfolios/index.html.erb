@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+</head>
+<body>
+
+   <h1>My Work</h1>
+  
+  <% @portfolio_items.each do |portfolio_item|%>
+    <p><%= portfolio_item.title %></p>
+    <p><%= portfolio_item.subtitle %></p>
+    <p><%= portfolio_item.body %></p>
+    <%= image_tag portfolio_item.thumb_image %>
+  <% end %>
+</body>
+</html>
