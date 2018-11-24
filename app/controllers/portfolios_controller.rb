@@ -4,6 +4,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def ruby
+    @ruby_portfolio_items = Portfolio.ruby_on_rails_portfolio_items
+  end
+
   def show 
     @portfolio_item = Portfolio.find(params[:id])
   end
