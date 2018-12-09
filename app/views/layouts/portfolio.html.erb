@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -13,7 +13,7 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <div>
+     <div>
       <div><%= link_to "Home", root_path %></div>
       <div><%= link_to "About", about_me_path %></div>
       <div><%= link_to "Contact", contact_path %></div>
@@ -27,6 +27,7 @@
       <%= link_to "Register", new_user_registration_path %>
       <%= link_to "Login", new_user_session_path %>
     <% end %>
+    
     <%= yield %>
 
     <% if session[:source] %>
