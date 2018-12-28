@@ -16,7 +16,7 @@
     <%= render 'shared/portfolio_nav' %>
     <%# end of navigation %>
     <%# start of jumbo %>
-    <%= render 'shared/portfolio_header' %>
+    <%= render 'shared/portfolio_header' unless logged_in?(:site_admin) %>
     <%# end of jumbo %>
     
     <%= yield %>
