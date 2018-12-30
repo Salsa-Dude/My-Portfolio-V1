@@ -10,10 +10,6 @@ class PortfoliosController < ApplicationController
     @ruby_portfolio_items = Portfolio.ruby_on_rails_portfolio_items
   end
 
-  def show 
-    @portfolio_item = Portfolio.find(params[:id])
-  end
-
   def new 
     @portfolio_item = Portfolio.new
     3.times { @portfolio_item.technologies.build }
@@ -27,6 +23,12 @@ class PortfoliosController < ApplicationController
     else  
       render :new
     end
+  end
+
+
+
+  def show 
+    @portfolio_item = Portfolio.find(params[:id])
   end
 
   def edit 

@@ -11,11 +11,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+  <body class="test">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column mo">
       <%= render "shared/application_nav"%>
 
-      <%= login_helper('nav-link') %>
+      <%# <%= login_helper('nav-link') %> 
 
       <%= yield %>
 
