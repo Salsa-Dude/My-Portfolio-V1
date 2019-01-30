@@ -1,21 +1,87 @@
 
 @import "bootstrap";
 
-.yo {
-  border: solid;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  background: image-url('background.jpg') no-repeat;
+  background-size: cover;
 }
 
-.mo {
-  border: solid;
+#background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(105, 104, 104, 0.5); }
+
+
+.roundcontent {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border: 10px dashed #fff;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.roundborder {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.roundborder .avatar-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.avatar-image {
   height: 100%;
   width: 100%;
-  padding: 0;
-  margin: 0;
 }
+
+.roundcontent {
+  -webkit-animation: slideDash 10s infinite linear;
+  animation: slideDash 10s infinite linear;
+  -webkit-backface-visibility: hidden;
+}
+
+.greet-container {
+ 
+  padding-top: 8%;
+}
+
+.avatar-container {
+  
+}
+
+.homepage-container {
+
+  margin-top: -5%;
+}
+
+
+
+
+
 
 /*
  * Globals
@@ -46,7 +112,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 
 body {
@@ -56,7 +121,7 @@ body {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
-  color: #fff;
+  color: white;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
@@ -120,6 +185,8 @@ body {
 }
 
 
+
+
 /*
  * Footer
  */
@@ -130,4 +197,11 @@ body {
 .app-nav span {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+
+@-webkit-keyframes slideDash {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }

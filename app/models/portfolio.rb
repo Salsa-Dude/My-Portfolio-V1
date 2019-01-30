@@ -4,6 +4,11 @@ class Portfolio < ApplicationRecord
 
   include Placeholder
   validates :title, :body, :main_image, :thumb_image, presence: true
+
+  mount_uploader :thumb_image, PortfolioUploader
+  mount_uploader :main_image, PortfolioUploader
+  
+  
   scope :ruby_on_rails_portfolio_items, -> { where(subtitle: "Ruby on Rails")}
 
   after_initialize :set_defaults
