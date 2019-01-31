@@ -253,7 +253,7 @@ DEPENDENCIES
   coderay (~> 1.1, >= 1.1.2)
   coffee-rails (~> 4.2)
   devise (~> 4.5)
-  dotenv-rails (~> 2.6)
+  dotenv-rails
   font-awesome-rails (~> 4.7, >= 4.7.0.4)
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.5)
