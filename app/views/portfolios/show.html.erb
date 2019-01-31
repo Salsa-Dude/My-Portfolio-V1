@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-md-7">
       <div class="portfolio-show-image-box">
-        <%= image_tag @portfolio_item.main_image.to_s%>
+        <%= image_tag portfolio_img(@portfolio_item.main_image, 'main') %>
       </div>
     </div>
     <div class="col-md-5">
