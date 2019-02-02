@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :comments, dependent: :destroy
+
   ############################################################################################
   ## PeterGate Roles                                                                        ##
   ## The :user role is added by default and shouldn't be included in this list.             ##
@@ -13,6 +15,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   validates :name, presence: true
+
   
   def first_name
     self.name.split.first
