@@ -5,6 +5,7 @@
   )
 end
 
+
 10.times do |blog| 
   Blog.create!(
     title: "My Blog Post #{blog}",
@@ -18,7 +19,7 @@ end
 5.times do |skill|
   Skill.create!(
     title: "Rails #{skill}",
-    percent_utilize: 15
+    percent_utilized: 15
   )
 end
 
