@@ -7,10 +7,9 @@
   <div class="p-3">
      <h4 class='font-italic'>Topics</h4>
     <ol class="list-unstyled topic-links">
-      <li><a href="http://localhost:3000/topics/1">Ruby</a></li>
-      <li><a href="http://localhost:3000/topics/2">React</a></li>
-      <li><a href="#">PostgreSQL</a></li>
-      <li><a href="#">JavaScript</a></li>
+      <% @side_bar_topics.each do |topic| %>
+        <li><%= link_to topic.title, topic_path(topic) %> </li>
+      <% end %>
     </ol>
   </div>
   
