@@ -5,7 +5,7 @@ class Blog < ApplicationRecord
 
   validates :title, :body, :topic_id, presence: true
 
-  belongs_to :topic
+  belongs_to :topic, optional: true
  
   has_many :comments, dependent: :destroy
 
