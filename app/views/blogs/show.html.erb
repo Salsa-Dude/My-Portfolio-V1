@@ -1,7 +1,15 @@
+
+
 <div class="col-md-8 blog-main">
   <h2> <%= @blog.title %></h2>
 
-  <%= @blog.topic.title %>
+  <%# <%= @blog.topic.title %> 
+ 
+  <ul class="breadcrumb">
+    <%= link_to "Home", root_path, class: "breadcrumb-item"%>
+    <%= link_to @blog.topic.title, topic_path(@blog.topic), class: "breadcrumb-item"%>
+    <span class="breadcrumb-item active"><%= @blog.title %></span>
+</ul>
   
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin)  %> | 
   <%= link_to 'Back', blogs_path %>
