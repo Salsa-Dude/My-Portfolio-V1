@@ -1,4 +1,4 @@
-<div class="app-card-container">
+<div class="app-card-container about-container">
   <div class="card">
     <h1>About Me</h1>
     
@@ -7,10 +7,72 @@
     <div class="row about-me-box">
       <div class="col-md-4">
         <%= image_tag "joe.jpg", width: 300, alt: "profile image"%>
+        <div class="skills-container">
+          <% @skills.each do |skill| %>
+            <div class="inner-skill">
+              <h4><%= skill.title %><h4>
+              <div class="progress">
+                <div 
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
       <div class="col-md-8">
         <p>Hey, I'm Joe! I'm a self taught Front-end web developer currently living in Manassas, VA. After working in the construction field for a number of years, I discovered my passion for web design and development. I bring an eye for visual and user interaction design to every project. I'm always looking to learn new skills and play with new technologies.</p>
         <p> Have a project in mind? Interested to learn more about me? Lets talk! You can contact me here.</p>
+         <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Job 1
+            </div>
+            <div class="card card-block">
+              Job 2
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              School 1
+            </div>
+            <div class="card card-block">
+              School 2
+            </div>
+            <div class="card card-block">
+              School 3
+            </div>
+          </div>
+        </p>
       </div>
     </div>
   </div>
