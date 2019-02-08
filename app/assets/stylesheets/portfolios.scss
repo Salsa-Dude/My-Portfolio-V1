@@ -6,6 +6,7 @@
   --jumbotron-padding-y: 3rem;
 }
 
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -23,7 +24,7 @@
 }
 
 .portfolio-show-image-box {
- 
+  width: 100%;
 }
 
 .portfolio-show-image-box img {

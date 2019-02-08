@@ -1,5 +1,5 @@
 
-<div class="col-md-4">
+<div class="col-md-4 k">
   <div class="card mb-4 box-shadow">
     <div class="portfolio-image-box">
       <%= image_tag portfolio_item.thumb_image.url %>
@@ -8,13 +8,6 @@
       <p class="card-text">
         <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> <%= portfolio_item.subtitle %>
       </p>
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-outline-secondary">View Source Code</button>
-          <button type="button" class="btn btn-sm btn-outline-secondary">View Demo</button>
-        </div>
-        <small class="text-muted">9 mins</small>
-      </div>
     </div>
   </div>
 </div>
