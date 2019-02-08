@@ -73,3 +73,4 @@ gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'cocoon', '~> 1.2', '>= 1.2.12'
 gem 'redis', '~> 3.3', '>= 3.3.3'
+gem "aws-sdk-s3", require: false
