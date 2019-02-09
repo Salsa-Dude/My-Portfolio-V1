@@ -1,27 +1,70 @@
 
-3.times do |topic|
-  Topic.create!(
-    title: "Topic #{topic}"
+
+User.create!(email: "joe@gmail.com", password: '123456', name: "Joseph Arias", roles: "site_admin")
+
+
+@React = Topic.create!(
+  title: "React"
+)
+
+@Ruby = Topic.create!(
+  title: "Ruby"
+)
+
+@Rails = Topic.create!(
+  title: "Rails"
+)
+
+
+
+# 10.times do |blog| 
+#   Blog.create!(
+#     title: "My Blog Post #{blog}",
+#     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+#     topic_id: Topic.last.id
+
+
+#   )
+# end
+
+
+  @skill_rails = Skill.create!(
+    title: "Rails",
+    percent_utilized: 75
   )
-end
 
-
-10.times do |blog| 
-  Blog.create!(
-    title: "My Blog Post #{blog}",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    topic_id: Topic.last.id
-
-
+  @skill_react = Skill.create!(
+    title: "React",
+    percent_utilized: 87
   )
-end
 
-5.times do |skill|
-  Skill.create!(
-    title: "Rails #{skill}",
-    percent_utilized: 15
+  @skill_javascript = Skill.create!(
+    title: "JavaScript",
+    percent_utilized: 95
   )
-end
+
+  @skill_ruby = Skill.create!(
+    title: "Ruby",
+    percent_utilized: 70
+  )
+
+  @skill_php = Skill.create!(
+    title: "PHP",
+    percent_utilized: 50
+  )
+
+  @skill_html = Skill.create!(
+    title: "HTML",
+    percent_utilized: 98
+  )
+
+  @skill_css = Skill.create!(
+    title: "CSS",
+    percent_utilized: 98
+  )
+
+
+
 
 # 8.times do |portfolio_item| 
 #   Portfolio.create!(
