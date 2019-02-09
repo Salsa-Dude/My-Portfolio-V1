@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6'
 
-gem 'dotenv-rails', groups: [:development, :test]
+# gem 'dotenv-rails', groups: [:development, :test]
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -74,4 +74,4 @@ gem 'carrierwave-aws', '~> 1.3'
 gem 'cocoon', '~> 1.2', '>= 1.2.12'
 gem 'redis', '~> 3.3', '>= 3.3.3'
 
-# gem "aws-sdk-s3", require: false
+gem "aws-sdk-s3", require: false
