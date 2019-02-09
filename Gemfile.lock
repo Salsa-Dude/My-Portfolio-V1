@@ -269,7 +269,7 @@ DEPENDENCIES
   mini_magick (~> 4.9, >= 4.9.2)
   petergate (~> 2.0, >= 2.0.1)
   pg (>= 0.18, < 2.0)
-  puma (~> 3.11)
+  puma
   rails (~> 5.2.1)
   redcarpet (~> 3.4)
   redis (~> 3.3, >= 3.3.3)
