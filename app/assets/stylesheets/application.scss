@@ -112,11 +112,23 @@
   margin-top: 5%;
 }
 
+.about-paragraph {
+  padding-left: 4%;
+  padding-right: 4%;
+  
+  line-height: 1.7rem;
+}
+
+.progress {
+  height: 10px;
+}
 
 .inner-skill {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
+
+
 
 
 
@@ -167,6 +179,15 @@ body {
   width: 70em;
 
 }
+
+.cover-heading {
+  color: white;
+}
+
+.lead {
+  color: white;
+}
+
 /*
  * Header
  */
