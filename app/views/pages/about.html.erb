@@ -6,7 +6,7 @@
 
     <div class="row about-me-box">
       <div class="col-md-4">
-        <%= image_tag "joe.jpg", width: 300, alt: "profile image"%>
+        <%= image_tag "joe-pic.png", width: 300, alt: "profile image"%>
         <div class="skills-container">
           <% @skills.each do |skill| %>
             <div class="inner-skill">
@@ -27,9 +27,9 @@
       <div class="col-md-8 about-paragraph">
         <p>I've been building things my entire life - from construction projects, plumbing repairs, to websites and web applications. It's what I enjoy doing. I now build products to help businesses deliver information as a Full Stack Developer. With experience in Ruby on Rails, JavaScript, React and Redux, I've built social platforms focused on community-empowerment, architectured web applications, and created multi page websites to help businesses deliver information.
         </p>
-        <p> Have a project in mind? Interested to learn more about me? <br> Lets talk! You can contact me here.</p>
+        <p> Have a project in mind? Interested to learn more about me? <br> Lets talk! </p>
         
-          <button
+          <%# <button
             class="btn btn-primary"
             type="button"
             data-toggle="collapse"
@@ -38,7 +38,7 @@
             aria-controler="jobHistory"
           >
             Job History
-          </button>
+          </button> %>
 
           <button
             class="btn btn-primary"
@@ -53,25 +53,25 @@
         </p>
 
         <p>
-          <div class="collapse" id="jobHistory">
+          <%# <div class="collapse" id="jobHistory">
             <div class="card card-block">
               Job 1
             </div>
             <div class="card card-block">
               Job 2
             </div>
-          </div>
+          </div> %>
 
           <div class="collapse" id="education">
             <div class="card card-block">
-              School 1
+              Flatiron School 2018-2019
             </div>
             <div class="card card-block">
-              School 2
+              Northern Virginia Community College - major: computer science 2017-2018
             </div>
-            <div class="card card-block">
+            <%# <div class="card card-block">
               School 3
-            </div>
+            </div> %>
           </div>
         </p>
       </div>
