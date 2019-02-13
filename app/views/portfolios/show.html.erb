@@ -7,7 +7,10 @@
       </div>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group portfolio-links">
-          <a target="_blank" href="<%= @portfolio_item.url_link %>"><button type="button" class="btn btn btn-outline-primary portfolio-link">View Demo</button></a>
+          <% if @portfolio_item.youtube_url? %>
+            <a target="_blank" href="<%= @portfolio_item.youtube_url %>"><button type="button" class="btn btn btn-outline-primary portfolio-link">View Youtube Demo</button></a>
+          <% end %>
+          <a target="_blank" href="<%= @portfolio_item.url_link %>"><button type="button" class="btn btn btn-outline-primary portfolio-link">View Live Site</button></a>
           <% if @portfolio_item.source_url? %>
             <a target="_blank" href="<%= @portfolio_item.source_url %>"><button type="button" class="btn btn btn-outline-info portfolio-link">View Source Code</button></a>
           <% end %>
