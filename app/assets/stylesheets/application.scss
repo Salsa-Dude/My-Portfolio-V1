@@ -24,7 +24,8 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(105, 104, 104, 0.5); }
+  background: rgba(105, 104, 104, 0.5); 
+}
 
 
 .roundcontent {
@@ -181,13 +182,17 @@ body {
 }
 
 .cover-heading {
-  color: white;
-  font-size: 3rem;
+  // color: #ffbb00;
+  font-size: 3.5rem;
   margin-bottom: 20px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(41,48,59,0.55);
 }
 
 .lifelong-learner {
   margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(41,48,59,0.55);
+  font-size: 1.5rem;
 }
 
 .lead {
@@ -203,6 +208,7 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  // text-shadow: 0 2px 4px rgba(41,48,59,0.55);
 }
 
 .nav-masthead .nav-link {
@@ -211,6 +217,7 @@ body {
   color: white;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
+  text-shadow: 0 2px 4px rgba(41,48,59,0.55);
 }
 
 .nav-masthead .nav-link:hover,
@@ -272,7 +279,7 @@ body {
 
 
 .main-icons {
-  margin-top: 1.5rem; 
+  margin-top: 8%; 
 }
 
 .main-icons a {
@@ -280,6 +287,6 @@ body {
 }
 
 .main-icons a:hover {
-  color: #eece1a;
+   color: #eece1a;
   transition: all 0.5s ease-out; 
 }
