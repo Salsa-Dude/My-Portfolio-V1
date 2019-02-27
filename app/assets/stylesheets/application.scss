@@ -269,3 +269,17 @@ body {
     -webkit-transform: rotate(360deg);
   }
 }
+
+
+.main-icons {
+  margin-top: 1.5rem; 
+}
+
+.main-icons a {
+  padding: 0.4rem; 
+}
+
+.main-icons a:hover {
+  color: #eece1a;
+  transition: all 0.5s ease-out; 
+}
