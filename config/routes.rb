@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   resources :blogs
 
   mount ActionCable.server => '/cable'
+  mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
   
   root to: 'pages#home'
+
 
 end
