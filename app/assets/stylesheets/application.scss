@@ -30,8 +30,8 @@
 
 .roundcontent {
   position: absolute;
-  height: 400px;
-  width: 400px;
+  height: 380px;
+  width: 380px;
   border: 10px dashed #fff;
   border-radius: 50%;
   -webkit-transition-duration: 0.8s;
@@ -42,8 +42,8 @@
 
 .roundborder {
   position: relative;
-  height: 400px;
-  width: 400px;
+  height: 380px;
+  width: 380px;
   border-radius: 50%;
 }
 
@@ -282,26 +282,30 @@ body {
   transition: all 0.5s ease-out; 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .masthead-brand {
     float: left;
   }
   .nav-masthead {
     float: right;
   }
+}
 
+@media (max-width: 768px) {
   .roundcontent {
     height: 280px;
     width: 280px;
   }
-
+  
   .roundborder {
     height: 280px;
     width: 280px;
     
   }
-
+  
   .avatar-container {
     margin-top: 20px;
   }
 }
+
+
