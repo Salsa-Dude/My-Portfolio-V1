@@ -234,15 +234,6 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
 
 /*
  * Cover
@@ -289,4 +280,28 @@ body {
 .main-icons a:hover {
    color: #eece1a;
   transition: all 0.5s ease-out; 
+}
+
+@media (max-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+
+  .roundcontent {
+    height: 280px;
+    width: 280px;
+  }
+
+  .roundborder {
+    height: 280px;
+    width: 280px;
+    
+  }
+
+  .avatar-container {
+    margin-top: 20px;
+  }
 }
