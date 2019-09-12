@@ -6,8 +6,6 @@
   <%= favicon_link_tag 'favicon-16x16.png' %>
   <%= favicon_link_tag 'site.webmanifest' %>
 
-  <%= social_share_button_tag(@page_title, url: "https://secure.example.com/example.jpg") %>
-
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
     <meta charset="utf-8">
@@ -23,6 +21,8 @@
 
   <body class="test">
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+  <%= social_share_button_tag(@page_title, url: "https://secure.example.com/example.jpg") %>
       <%= render "shared/application_nav"%>
       
       <div id="background"></div>
