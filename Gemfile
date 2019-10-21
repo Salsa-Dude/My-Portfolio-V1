@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6'
+ruby '2.6.3'
+
+gem 'meta-tags'
+gem 'social-share-button'
 
 # gem 'dotenv-rails', groups: [:development, :test]
 gem 'dotenv-rails', require: 'dotenv/rails-now'
