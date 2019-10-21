@@ -1,16 +1,48 @@
 
-<div class="col-md-4 k">
-  <div class="card mb-4 box-shadow">
-    <div class="portfolio-image-box">
-      <a href="<%= portfolio_show_path(portfolio_item) %>"><%= image_tag portfolio_item.thumb_image.url %></a>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> <%= portfolio_item.subtitle %>
-      </p>
+
+ <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+<% if portfolio_item.subtitle === "Web Application" %>
+  <div class="col-md-4 k">
+    <div class="card mb-4 box-shadow">
+      <div class="portfolio-image-box">
+        <a href="<%= portfolio_show_path(portfolio_item) %>"><%= image_tag portfolio_item.thumb_image.url %></a>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> <%= portfolio_item.subtitle %>
+        </p>
+      </div>
     </div>
   </div>
+<% end %>
 </div>
+
+
+<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+<% if portfolio_item.subtitle === "" %>
+
+  <div class="col-md-4 k">
+    <div class="card mb-4 box-shadow">
+      <div class="portfolio-image-box">
+        <a href="<%= portfolio_show_path(portfolio_item) %>"><%= image_tag portfolio_item.thumb_image.url %></a>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> <%= portfolio_item.subtitle %>
+        </p>
+      </div>
+    </div>
+  </div>
+<% end %>
+</div>
+
+
+
+ 
+
+</div>
+ 
+
 
 
 
