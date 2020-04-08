@@ -7,7 +7,7 @@ module DefaultPageTitle
   end
 
   def set_title 
-    @page_title = "My Portfolio | Joseph Arias"
+    @page_title = "Joseph Arias | My Portfolio"
   end
 
 end
