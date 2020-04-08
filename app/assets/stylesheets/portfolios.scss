@@ -6,13 +6,21 @@
   --jumbotron-padding-y: 3rem;
 }
 
+body {
+  color: #444452;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.float-left {
+  margin-left: 10%;
+}
+
 
 .jumbotron {
   padding-top: 4%;
   padding-bottom: 4%;
   margin-bottom: 0;
   background-color: #fff;
- 
 }
 
 .jumbotron-heading {
@@ -39,6 +47,27 @@
 
 .portfolio-container {
   margin-top: 3%;
+}
+
+.project-info {
+  color: #444452;
+}
+
+.project-info ul {
+  list-style: none;
+}
+
+.project-info ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #007bff;; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.project-info li {
+  line-height: 2;
 }
 
 .jumbotron p:last-child {
@@ -70,12 +99,24 @@ footer p {
 }
 
 .portfolio-links {
-  margin-top: 3%;
-  margin-left: 10%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-link {
   margin-right: 30px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-text a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #444452;
+ 
 }
 
 

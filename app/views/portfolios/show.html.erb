@@ -7,18 +7,15 @@
       </div>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group portfolio-links">
-          <% if @portfolio_item.youtube_url? %>
-            <a target="_blank" href="<%= @portfolio_item.youtube_url %>"><button type="button" class="btn btn btn-outline-primary portfolio-link">View Youtube Demo</button></a>
-          <% end %>
-          <a target="_blank" href="<%= @portfolio_item.url_link %>"><button type="button" class="btn btn btn-outline-primary portfolio-link">View Live Site</button></a>
+          <a target="_blank" href="<%= @portfolio_item.url_link %>"><button type="button" class="btn btn btn-primary portfolio-link">View Live Site</button></a>
           <% if @portfolio_item.source_url? %>
-            <a target="_blank" href="<%= @portfolio_item.source_url %>"><button type="button" class="btn btn btn-outline-info portfolio-link">View Source Code</button></a>
+            <a target="_blank" href="<%= @portfolio_item.source_url %>"><button type="button" class="btn btn btn-info portfolio-link">View Source Code</button></a>
           <% end %>
         </div>
         
       </div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-5 project-info">
       <h1><%= @portfolio_item.title%></h1>
       
       <hr>
@@ -29,9 +26,11 @@
       <hr>
       
       <h3>Technologies Used</h3>
-      <% @portfolio_item.technologies.each do |t| %>
-        <p><%= t.name %></p>
-      <% end %>
+      <ul>
+        <% @portfolio_item.technologies.each do |t| %>
+          <li><%= t.name %></li>
+        <% end %>
+      </ul>
 
       <% if logged_in?(:site_admin)%>
         <div class="">
