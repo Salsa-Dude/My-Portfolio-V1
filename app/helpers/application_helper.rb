@@ -29,14 +29,6 @@ module ApplicationHelper
       {
         url: portfolios_path,
         title: 'Portfolio'
-      },
-      {
-        url: blogs_path,
-        title: 'Blog'
-      },
-      {
-        url: contact_path,
-        title: 'Contact'
       }
     ]
   end
