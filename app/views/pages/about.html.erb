@@ -7,26 +7,22 @@
     <div class="row about-me-box">
       <div class="col-md-4">
         <%= image_tag "joe-pic.png", width: 300, alt: "profile image"%>
-        <div class="skills-container">
-          <% @skills.each do |skill| %>
-            <div class="inner-skill">
-              <h5><%= skill.title %><h5>
-              <div class="progress">
-                <div 
-                  class="progress-bar progress-bar-striped bg-warning"
-                  role="progressbar"
-                  aria-valuenow="<%= skill.percent_utilized %>"
-                  aria-valuemax="100"
-                  style="width: <%= skill.percent_utilized %>%"
-                ></div>
-              </div>
-            </div>
-          <% end %>
-        </div>
+        
       </div>
       <div class="col-md-8 about-paragraph">
-        <p> Full-Stack Web Developer, Teacher and Software Engineer Coach at Flatiron School with a background in computer science, UI design and experience with managing and mentoring teams. I've been building things my entire life from wood-working projects to websites and web applications. It's what I enjoy doing. I now build products to help businesses deliver information as a Full Stack Developer.
-        </p>
+          <!-- Full-Stack Web Developer, Teacher and Software Engineer Coach at Flatiron School with a background in computer science, UI design and experience with managing and mentoring teams. I've been building things my entire life from wood-working projects to websites and web applications. It's what I enjoy doing. I now build products to help businesses deliver information as a Full Stack Developer. -->
+
+            <p>I'm currently an Software Engineering Teaching Assistant at <strong >Flatiron School.</strong> During my time at Flatiron, I assisted 50+ software engineering students solve workflow, git, and debugging issues in capstone projects and presented review lectures on Ruby, Rails, JavaScript, React, Redux, SQL, Git, debugging, and pair programming.
+            </p>
+
+            <p>
+            As a <strong>software engineer</strong>, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.
+            </p>
+          
+            <p>
+            <strong>When I'm not in front of a computer screen</strong>, I'm probably playing soccer, learning to get better at salsa dancing, or crossing off another item on my bucket list.
+          </p>
+      
         <p> Have a project in mind? Interested to learn more about me? <br> Lets talk! </p>
 
         <a target="_blank" href="https://drive.google.com/file/d/1x1DaPSj8TS6pYCo2CAwu2gPZ7vIj58iw/view?usp=sharing">
@@ -37,30 +33,6 @@
         Resume
         </button>
         </a>
-        
-          <%# <button
-            class="btn btn-primary"
-            type="button"
-            data-toggle="collapse"
-            data-target="#education"
-            aria-expanded="false"
-            aria-controler="education"
-          >
-            Education
-          </button> %>
-        </p>
-
-        <%# <p>
-          <div class="collapse" id="education">
-            <div class="card card-block">
-              Flatiron School 2018-2019
-            </div>
-            <div class="card card-block">
-              Northern Virginia Community College - major: computer science 2017-2018
-            </div>
-          </div>
-        </p> %>
-       <a href="https://drive.google.com/file/d/1dJOLefMaercEYmc4hN3SSIbxHxWmPgL2/view">Your Pdf Viewer</a>
       </div>
     </div>
   </div>
